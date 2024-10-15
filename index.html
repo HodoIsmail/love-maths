@@ -12,31 +12,32 @@
     <h1 class="heading">
         <img src="assests/images/logo.png" alt="logo"> Love Maths
     </h1>
-    <div class="game-area"></div>
+    <div class="game-area">
     <div class="controls-area">
-        <button class="btn btn-big btn-green">
+        <button data-type="subract" class="btn btn-big btn-green">
             <i class="fa fa-plus"></i>
         </button>
-        <button class="btn btn-big btn-blue">
+        <button data-type="multiple" class="btn btn-big btn-blue">
             <i class="fa fa-minus"></i>
         </button>
-        <button class="btn btn-big btn-orange">
+        <button data-type="division" class="btn btn-big btn-orange">
             <i class="fa fa-times"></i>
         </button>
-        <button class="btn btn-big btn-red">
+        <button data-type="addition" class="btn btn-big btn-red">
             <i class="fa fa-divide"></i>
         </button>
     </div>
     <div class="question-area">
-        <span id="operand1"></span>
-        <span id="operator"></span>
-        <span id="operand2"></span>
+        <span id="operand1">0</span>
+        <span id="operator">x</span>
+        <span id="operand2">0</span>
         <span>=</span>
         <p class="answer-message">Enter Answer</p>
         <input id="answer-box" type="number">
     </div>
-    <button class="btn btn-grey"></button>
-    <div class="score area">
+    <button data-type="submit" class="btn btn-gray">Submit Answer</button>
+</div>
+    <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores"> Incorrect Answers <span id="score">0</span></p>
     </div>
